@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Web Calculator</title>
+
+<script type="text/javascript" src ="_js/calculator.js"></script>
+<link rel="stylesheet" type="text/css" href="_css/calculator.css">
+
+
+</head>
+
+
+
+<body>
+
+<div id="pageWrapper">
+
+<header></header>
+
+<div id="contentWrapper">
+
+	<form id="calcForm">
+	
+	<input type="text" id="calcScreen" name="calcScreen">
+	<br>
+	<input type="button" name="calcButton7" value="7" onclick="calculator.pressNumberKey(7)">
+	<input type="button" name="calcButton8" value="8" onclick="calculator.pressNumberKey(8)">
+	<input type="button" name="calcButton9" value="9" onclick="calculator.pressNumberKey(9)">
+	<input type="button" name="calcTimes" value="x" onclick="calculator.pressOperationKey('multiply')">
+	<br>
+	<input type="button" name="calcButton4" value="4" onclick="calculator.pressNumberKey(4)">
+	<input type="button" name="calcButton5" value="5" onclick="calculator.pressNumberKey(5)">
+	<input type="button" name="calcButton6" value="6" onclick="calculator.pressNumberKey(6)">
+	<input type="button" name="calcMinus" value="-" onclick="calculator.pressOperationKey('subtract')">
+	<br>
+	<input type="button" name="calcButton1" value="1" onclick="calculator.pressNumberKey(1)">
+	<input type="button" name="calcButton2" value="2" onclick="calculator.pressNumberKey(2)">
+	<input type="button" name="calcButton3" value="3" onclick="calculator.pressNumberKey(3)">
+	<input type="button" name="calcPlus" value="+" onclick="calculator.pressOperationKey('add')">
+	<br>
+	<input type="button" name="calcDot" value="." onclick="calculator.clear()">
+	<input type="button" name="calcButton0" value="0" onclick="calculator.pressNumberKey(0)">
+	<input type="button" name="calcEnter" value="=" onclick="calculator.pressOperationKey('evaluate')">
+	<input type="button" name="calcDivision" value="/" onclick="calculator.pressOperationKey('divide')">
+	
+	</form>
+
+</div>
+
+<footer></footer>
+
+
+</div>
+
+</body>
+
+</html>
